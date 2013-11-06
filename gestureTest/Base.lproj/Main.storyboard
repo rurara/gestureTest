@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ioi-zN-VqQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="CL9-hJ-mrs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ebJ-lR-aZq" appends="YES" id="1aT-Kh-izQ"/>
+                            <outletCollection property="gestureRecognizers" destination="GkY-Qh-P8p" appends="YES" id="EQf-wO-Y9g"/>
+                            <outletCollection property="gestureRecognizers" destination="pUK-a8-liV" appends="YES" id="iYM-jt-n1N"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="ebJ-lR-aZq">
+                    <connections>
+                        <action selector="pinchTest:" destination="vXZ-lx-hvc" id="m5p-Np-rVC"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="GkY-Qh-P8p">
+                    <connections>
+                        <action selector="rotationTest:" destination="vXZ-lx-hvc" id="3gA-xs-NwN"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.10000000000000001" id="pUK-a8-liV">
+                    <connections>
+                        <action selector="dragTest:" destination="vXZ-lx-hvc" id="DpT-BO-svb"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
